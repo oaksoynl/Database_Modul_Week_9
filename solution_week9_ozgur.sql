@@ -2,6 +2,11 @@
 SELECT * FROM actor
 WHERE first_name = 'Nick' OR first_name = 'Ed' OR  first_name = 'Jennifer';
 
+İlk isminde Nick, Ed ve Jennifer adları bulunan aktörlerin adını ve soyadını gösterin.
+SELECT first_name, last_name
+FROM actor
+WHERE first_name IN ('Nick','Ed','Jennifer');
+
 İlk isminde adları Ed, Nick ve Jennifer olan aktörün sadece soyadını gösterin.
 SELECT last_name FROM actor
 WHERE first_name = 'Nick' OR first_name = 'Ed' OR first_name = 'Jennifer';
